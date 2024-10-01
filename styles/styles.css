@@ -222,47 +222,122 @@ body{
 
 /* hobbies*/
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #ffcc00;
+}
+
 .hobbies {
     height: 100vh;
-    background: url(/img/hobbies-bg.webp) no-repeat;
+    background: url('/img/hobbies-bg.webp') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    justify-content: center;
+    padding: 20px;
     color: white;
-    padding-top: 25px;
+    text-align: center;
 }
 
 .hobbies-content {
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
 }
-.hobbies-content h1{
-    color: black;
+
+.hobbies-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
-.hobbies-content p{
-    color: black;
+
+.hobbies-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
+
 .hobby-list {
-    margin-top: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 .hobby {
     margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.hobby:hover {
+    transform: scale(1.05);
 }
 
 .hobby h2 {
-    color: black;
-    font-weight: 700;
+    font-size: 24px;
+    color: #ffcc00;
+    margin-bottom: 5px;
 }
 
 .hobby p {
-    font-size: 14px;
-    color: black;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
 }
 
 
 /* education*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
 
 .education {
     height: 100vh;
@@ -270,71 +345,131 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    justify-content: center;
+    padding: 20px;
 }
 
 .education-content {
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .education-content h1 {
     font-weight: 700;
     margin-bottom: 20px;
     font-size: 36px;
+    text-align: center;
 }
 
 .education-content h3 {
     color: #00abf0;
     margin-top: 20px;
     font-size: 24px;
+    border-bottom: 2px solid #00abf0;
+    padding-bottom: 5px;
+}
+
+.education-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
 }
 
 /*esports*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
+
 .esport {
     height: 100vh;
-    background: url(/img/esports-bg.webp) no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    background: url('/img/esports-bg.webp') no-repeat center center / cover;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    justify-content: space-between;
+    padding: 20px;
     color: white;
-
 }
 
 .esport-content {
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-left: 450px;
 }
 
 .esport-content h1 {
     font-weight: 700;
-    color: black;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #00abf0;
 }
 
 .esport-content h3 {
     font-weight: 700;
-    color: black;
+    font-size: 24px;
+    color: #00abf0;
+    margin: 15px 0;
 }
 
-.esport-content p, ul {
-    font-size: 14px;
-    color: black;
+.esport-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.esport-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.esport-content ul li {
+    margin: 5px 0;
 }
 
 .esport-sci {
-    margin-top: 20px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
 }
 
 .esport-sci a {
-    font-size: 25px;
-    color: black;
+    font-size: 30px;
+    color: #00abf0;
     transition: color 0.3s ease;
 }
 
 .esport-sci a:hover {
-    color: black;
+    color: #ffcc00;
 }
-
